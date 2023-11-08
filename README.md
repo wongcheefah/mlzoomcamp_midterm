@@ -37,18 +37,31 @@ The research by Zidian Xie et al. that inspired this dataset's creation and the 
 This project is organized into a set of folders and files to facilitate the full machine learning workflow, from data analysis to model deployment. Below is the folder structure and description of each element in this repository:
 
 ├── data
+
 │ ├── data_dictionary.csv
+
 │ └── diabetes_binary_health_indicators_BRFSS2015.csv
+
 ├── model
+
 │ ├── best_model.pkl
+
 │ └── sorted_results.pkl
+
 ├── Dockerfile
+
 ├── notebook.ipynb
+
 ├── Pipfile
+
 ├── Pipfile.lock
+
 ├── predict_test.py
+
 ├── predict.py
+
 ├── README.md
+
 └── train.py
 
 ### Folders and Files
