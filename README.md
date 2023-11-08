@@ -126,4 +126,84 @@ The project workflow encompasses several stages, from data preparation to featur
 10. **Model Serialization**:
    - The best model is serialized and saved in the `model` directory, ready for deployment in a production environment.
 
+# How to Replicate This Project
 
+To replicate this project and run the code on your own system, please follow the instructions below. These steps will guide you through the process of setting up the environment, cloning the repository, and running the model training and prediction service.
+
+### Prerequisites
+
+- Ensure that you have Python, pip, and Git installed on your system.
+
+### Environment Setup
+
+1. **Install pipenv**:
+   - Pipenv is a packaging tool for Python that simplifies dependency management. Install it using the command:
+     ```
+     pip install pipenv
+     ```
+   - For more detailed instructions on pipenv installation, refer to the [official documentation](https://pipenv.pypa.io/en/latest/installation/#make-sure-you-have-python-and-pip).
+
+2. **Clone the Repository**:
+   - Create a directory for the project and navigate to it in your terminal.
+   - Clone the repository with the following command:
+     ```
+     git clone https://github.com/wongcheefah/mlzoomcamp_midterm.git
+     ```
+
+3. **Replicate the Environment**:
+   - Inside the project directory, run the following command to replicate the development environment:
+     ```
+     pipenv install --dev
+     ```
+   - This will create a virtual environment and install all the necessary dependencies as specified in the `Pipfile`.
+
+4. **Activate the Virtual Environment**:
+   - To activate the virtual environment, use the command:
+     ```
+     pipenv shell
+     ```
+
+### Running the Model Training Script
+
+- To train the model using the provided script, execute:
+    ```
+    python3 train.py
+    ```
+
+### Building and Running the Docker Image
+
+1. **Build the Docker Image**:
+ - With Docker installed on your system, build the image using:
+   ```
+   docker build -t predict_diabetes .
+   ```
+
+2. **Start the Prediction Service Container**:
+ - To start a Docker container that will run the prediction service, use:
+   ```
+   docker run -it --rm -p 9696:9696 predict_diabetes
+   ```
+ - The container will listen for prediction requests on port `9696`.
+
+### Testing the Prediction Service
+
+- Open another terminal and run the following command to test the prediction service:
+    ```
+    python3 predict_test.py
+    ```
+
+- The test script will send a prediction request to the service running in the Docker container. The output will display the details of the request, the prediction response, and a comparison with the actual value.
+
+By following these steps, you should be able to replicate the project environment and run the model training and prediction service as detailed in this project.
+
+# Conclusion
+
+The Diabetes Health Indicators Dataset analysis and predictive modeling project aims to provide insights into the factors contributing to diabetes and offers a predictive model to assess the likelihood of diabetes in individuals. This project encapsulates the end-to-end process of a machine learning workflow, including data cleaning, exploratory data analysis, feature selection, model training and tuning, and deployment of a prediction service.
+
+By following the replication instructions, users can set up their environment, run the model training script, and deploy the prediction service to make their own diabetes predictions based on health indicators. The provided Dockerfile ensures that the prediction service is containerized, making the deployment consistent and scalable across different platforms.
+
+This repository is structured to not only serve as a platform for diabetes prediction but also as an educational resource for those looking to learn and apply machine learning operations (MLOps) practices. It demonstrates the use of various tools and technologies such as Jupyter notebooks for experimentation, Pipenv for environment management, and Docker for containerization.
+
+The project underscores the importance of machine learning in healthcare analytics and the potential for predictive models to assist in early diagnosis and intervention strategies. We hope that this repository serves as a valuable resource for researchers, data scientists, and healthcare professionals interested in advancing the application of machine learning in public health.
+
+Thank you for your interest in this project. For questions, suggestions, or contributions, please reach out through the project's GitHub repository.
