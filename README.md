@@ -128,7 +128,7 @@ The project workflow encompasses several stages, from data preparation to featur
 
 # How to Replicate This Project
 
-To replicate this project and run the code on your own system, please follow the instructions below. These steps will guide you through the process of setting up the environment, cloning the repository, and running the model training and prediction service.
+To replicate this project and run the code on your own system, please follow the instructions below. These steps will guide you through the process of setting up the environment, cloning the repository, and running the model training and prediction service. _A [video](https://youtu.be/RqFJBDcS-v0) of the steps below is available on my YouTube channel._
 
 ### Prerequisites
 
