@@ -1,0 +1,23 @@
+Variable,Source,Type,Label,Description,Levels
+Diabetes_binary,,Nominal,Dependent Variable - Custom Diabetes Classification,Have you ever been diagnosed with diabetes?,"{0: 'No diabetes', 1: 'Prediabetes or diabetes'}"
+HighBP,_RFHYPE5,Nominal,High Blood Pressure Calculated Variable,"Adults who have been told they have high blood pressure by a doctor, nurse, or other health professional","{0: 'No', 1: 'Yes'}"
+HighChol,TOLDHI2,Nominal,Ever Told Blood Cholesterol High,"Have you EVER been told by a doctor, nurse or other health professional that your blood cholesterol is high?","{0: 'No', 1: 'Yes'}"
+CholCheck,_CHOLCHK,Nominal,Cholesterol Checked Calculated Variable,Cholesterol check within past five years,"{0: 'No', 1: 'Yes'}"
+BMI,_BMI5,Numerical,Computed body mass index,Body Mass Index (BMI),
+Smoker,SMOKE100,Nominal,Smoked at Least 100 Cigarettes,Have you smoked at least 100 cigarettes in your entire life?,"{0: 'No', 1: 'Yes'}"
+Stroke,CVDSTRK3,Nominal,Ever Diagnosed with a Stroke,(Ever told) you had a stroke.,"{0: 'No', 1: 'Yes'}"
+HeartDiseaseorAttack,_MICHD,Nominal,Ever had CHD or MI,Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI),"{0: 'No', 1: 'Yes'}"
+PhysActivity,_TOTINDA,Nominal,Leisure Time Physical Activity Calculated Variable,Adults who reported doing physical activity or exercise during the past 30 days other than their regular job,"{0: 'No', 1: 'Yes'}"
+Fruits,_FRTLT1,Nominal,Consume Fruit 1 or more times per day,Consume Fruit 1 or more times per day,"{0: 'No', 1: 'Yes'}"
+Veggies,VEGLT1,Nominal,Consume Vegetables 1 or more times per day,Consume Vegetables 1 or more times per day,"{0: 'No', 1: 'Yes'}"
+HvyAlcoholConsump,_RFDRHV5,Nominal,Heavy Alcohol Consumption,Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week),"{0: 'No', 1: 'Yes'}"
+AnyHealthcare,HLTHPLN1,Nominal,Have any health care coverage,"Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government plans such as Medicare, or Indian Health Service?","{0: 'No', 1: 'Yes'}"
+NoDocbcCost,MEDCOST,Nominal,Could Not See Doctor Because of Cost,Was there a time in the past 12 months when you needed to see a doctor but could not because of cost?,"{0: 'No', 1: 'Yes'}"
+GenHlth,GENHLTH,Ordinal,General Health,Would you say that in general your health is:,"{1: 'Excellent', 2: 'Very good', 3: 'Good', 4: 'Fair', 5: 'Poor'}"
+MentHlth,MENTHLTH,Numerical,Number of Days Mental Health Not Good,"Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good?",
+PhysHlth,PHYSHLTH,Numerical,Number of Days Physical Health Not Good,"Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good?",
+DiffWalk,DIFFWALK,Nominal,Difficulty Walking or Climbing Stairs,Do you have serious difficulty walking or climbing stairs?,"{0: 'No', 1: 'Yes'}"
+Sex,SEX,Nominal,Respondents Sex,Indicate sex of respondent.,"{0: 'Female', 1: 'Male'}"
+Age,_AGEG5YR,Ordinal,Reported age in five-year age categories calculated variable,Fourteen-level age category,"{1: 'Age 18 to 24', 2: 'Age 25 to 29', 3: 'Age 30 to 34', 4: 'Age 35 to 39', 5: 'Age 40 to 44', 6: 'Age 45 to 49', 7: 'Age 50 to 54', 8: 'Age 55 to 59', 9: 'Age 60 to 64', 10: 'Age 65 to 69', 11: 'Age 70 to 74', 12: 'Age 75 to 79', 13: 'Age 80 or older'}"
+Education,EDUCA,Ordinal,Education Level,What is the highest grade or year of school you completed?,"{1: 'Never attended school or only kindergarten', 2: 'Grades 1 through 8 (Elementary)', 3: 'Grades 9 through 11 (Some high school)', 4: 'Grade 12 or GED (High school graduate)', 5: 'College 1 year to 3 years (Some college or technical school)', 6: 'College 4 years or more (College graduate)'}"
+Income,INCOME2,Ordinal,Income Level,Is your annual household income from all sources:,"{1: 'Less than $10,000', 2: 'Less than $15,000 ($10,000 to less than $15,000)', 3: 'Less than $20,000 ($15,000 to less than $20,000)', 4: 'Less than $25,000 ($20,000 to less than $25,000)', 5: 'Less than $35,000 ($25,000 to less than $35,000)', 6: 'Less than $50,000 ($35,000 to less than $50,000)', 7: 'Less than $75,000 ($50,000 to less than $75,000)', 8: '$75,000 or more'}"
